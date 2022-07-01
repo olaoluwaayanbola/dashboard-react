@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const New = ({ inputs, title }) => {
   const [file, setFile] = useState("");
-  console.log(file)
+  console.log(file);
   return (
     <div className="new">
       <Sidebar />
