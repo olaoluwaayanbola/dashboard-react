@@ -14,18 +14,18 @@ function App() {
   return (
     <div className={darkMode ? "App dark" : "App"}>
       <Routes>
-        <Route index path='/' element={<Home></Home>}/>
-        <Route index path='/m' element={<Home></Home>}/>
-        <Route path="Login"  element={<Login></Login>}/>
+        <Route index path='/' element={<Home></Home>} />
+        <Route index path='/m' element={<Home></Home>} />
+        <Route path="Login" element={<Login></Login>} />
         <Route path="users">
-          <Route index  element={<List/>}></Route>
-          <Route path=':userId' element={<Single/>}></Route>
-          <Route path='new' element={<New inputs={userInputs} title="Add New User" />}/>
+          <Route index element={<List />}></Route>
+          <Route path=':userId' element={<Single />}></Route>
+          <Route path='new' element={<New inputs={userInputs} title="Add New User" />} />
         </Route>
         <Route path="products">
           <Route index element={<List></List>}></Route>
-          <Route path=':productsId' element={<Single/>}></Route>
-          <Route path='new' element={<New inputs={productInputs} title="Add New Product" />}/>
+          <Route path=':productsId' element={<Single />}></Route>
+          <Route path='new' element={<New inputs={productInputs} title="Add New Product" />} />
         </Route>
       </Routes>
     </div>

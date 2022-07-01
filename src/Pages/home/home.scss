@@ -1,11 +1,10 @@
 .home {
   display: flex;
-  .Sidebar{
+  .Sidebar {
     position: fixed;
   }
   .homeContainer {
     flex: 6;
-  
     .widgets,
     .charts {
       display: flex;
@@ -15,7 +14,6 @@
 
     .charts {
       height: fit-content;
-
     }
 
     .listContainer {
